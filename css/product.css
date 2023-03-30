@@ -694,6 +694,7 @@
     text-decoration: underline;
     font-weight: 600;
     display: none;
+    cursor: pointer;
 }
 
 .moreOption.active {

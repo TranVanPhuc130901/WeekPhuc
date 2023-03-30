@@ -77,9 +77,40 @@ $('.layerForgot').click(function(e) {
 /// hiện login khi ấn đăng nhập ở form forgot
 
 $('.link.btForgotLogin ').click(function(e) {
+    e.preventDefault();
+    $('.layerForgot').removeClass('active');
+    $('.layerLogin').addClass('active');
+})
+
+
+// show và hide password
+
+$('.iconPs').click(function(e) {
+    e.preventDefault();
+    let input = $(this).siblings('input')
+    let attInput = input.attr('type');
+    if (attInput == 'password') {
+        $(input).attr('type', 'text')
+        $(this).css('background', 'url(../image/icon/icon_eye.svg) no-repeat center center')
+    } else {
+        $(input).attr('type', 'password')
+        $(this).css('background', 'url(../image/icon/icon_eye_del.svg) no-repeat center center')
+    }
+});
+
+
+
+$('.wInputPassword .showPassword').click(function(e) {
         e.preventDefault();
-        $('.layerForgot').removeClass('active');
-        $('.layerLogin').addClass('active');
+        let input = $(this).siblings('input');
+        let attInput = input.attr('type');
+        if (attInput == 'password') {
+            $(input).attr('type', 'text');
+            $(this).css('background', 'url(../image/icon/icon_eye.svg) no-repeat center center')
+        } else {
+            $(input).attr('type', 'password')
+            $(this).css('background', 'url(../image/icon/icon_eye_del.svg) no-repeat center center')
+        }
     })
     //#endregion
 
@@ -264,15 +295,17 @@ jQuery(".carousel-next").click(function() {
 //#endregion
 
 
-$('.menu_mb').click(function(e) {
+$('.menu_mbBtn').click(function(e) {
     e.preventDefault();
-    $('.menuPopupMb').toggle()
+    $('.menuPopupMb').toggle();
+    $('.popup').removeClass('active')
 });
 
 
 $('.btLoginMb').click(function(e) {
     e.preventDefault();
     $('.layerLogin').toggleClass('active')
+    $('.menuPopupMb').removeClass('active');
 });
 
 
@@ -289,3 +322,61 @@ $(".weMoreInfoPrice .siteOption .options").each(function() {
         $(this).find(".moreOption").removeClass('active')
     }
 });
+
+
+//#region updateInfoUser
+
+
+
+$('.btnUpdate').click(function(e) {
+    e.preventDefault();
+    let dt = $(this).attr('data')
+    switch (dt) {
+        case 'textName':
+            $('.popupUpdateText .titleUpdate').text('Họ tên');
+            $('.popupUpdateText .descUpdate').text('Tên trên chứng minh thư, hộ chiếu, hoặc giấy phép lái xe của bạn');
+            $('.popupUpdateText').addClass('active')
+            $('.popupUpdateText .weInput input').focus()
+            break;
+        case 'textPhone':
+            $('.popupUpdateText .titleUpdate').text('Số điện thoại');
+            $('.popupUpdateText .descUpdate').text('');
+            $('.popupUpdateText .weInput label').text('Số điện thoại');
+            $('.popupUpdateText').addClass('active')
+            $('.popupUpdateText .weInput input').focus()
+            break;
+        case 'textEmail':
+            $('.popupUpdateText .titleUpdate').text('Email');
+            $('.popupUpdateText .descUpdate').text('');
+            $('.popupUpdateText .weInput label').text('Email của bạn');
+            $('.popupUpdateText').addClass('active')
+            $('.popupUpdateText .weInput input').focus()
+            break;
+        case 'gender':
+
+            $('.popupUpdateGender').addClass('active')
+            break;
+        case 'date':
+
+            $('.popupUpdateUser').addClass('active')
+            $('.popupUpdateUser .weInput input').focus()
+            break;
+    }
+});
+
+
+$('.backdrop').click(function(e) {
+    if ($(e.target).hasClass('backdrop')) {
+        $('.backdrop').removeClass('active');
+
+    }
+})
+
+$('.botUpdate .cancel').click(function(e) {
+
+    $('.backdrop').removeClass('active');
+
+
+})
+
+//#endregion

@@ -34,6 +34,61 @@
     }
     
     @media screen and (max-width: 576px) {
+        .weMember .headingUser {
+            display: none;
+        }
+        body .weMember .bodyUser {
+            border-top: none;
+        }
+        body .weMenberInfo .bodyUser .boxInfoMember .uploadAvatar .boxUpload {
+            display: none;
+        }
+        body .weMenberInfo .bodyUser .boxInfoMember .uploadAvatar .WImage {
+            width: 120px;
+            height: 120px;
+        }
+        body .weMember .bodyUser .boxMember {
+            padding: 24px 0;
+            gap: 24px;
+        }
+        .weMember {
+            padding: 16px 0!important;
+        }
+        .weMember .bodyUser .boxMember .nameUser .WImage {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .weMember .bodyUser .boxMember .nameUser .name {
+            font-size: 18px!important;
+        }
+        .backdrop .updateTextUser,
+        .backdrop .updateGenderUser,
+        .backdrop .updateDateUser {
+            width: 94%;
+        }
+        .weMenberInfo .bodyUser .boxInfoMember .uploadAvatar {
+            justify-content: center;
+        }
+        .weMenberInfo .weUser .wrp .bodyUser .boxInfoMember hr {
+            display: none;
+        }
+        .weMenberInfo .weUser .wrp .bodyUser .boxMember {
+            display: none;
+        }
+        .weMenberInfo .weUser .wrp .bodyUser .boxInfoMember {
+            width: 100%!important;
+            padding: 0!important;
+        }
+        body .weMenberInfo {
+            background: #fff!important;
+            padding: 16px 0;
+        }
+        .boxInfoMember .boxFogot {
+            padding: 0;
+        }
+        .weMenberInfo .bodyUser .boxInfoMember h2 {
+            display: none;
+        }
         .weMaps .WIframe {
             height: 50vh;
         }
@@ -374,6 +429,15 @@
     }
     
     @media screen and (min-width: 577px) and (max-width: 730px) {
+        .weMenberInfo .weUser .wrp .bodyUser .boxMember {
+            display: none;
+        }
+        .weMenberInfo .weUser .wrp .bodyUser .boxInfoMember {
+            width: 100%!important;
+        }
+        .header.headerUser {
+            display: none!important;
+        }
         .headingMb {
             display: block!important;
         }
@@ -424,6 +488,26 @@
     /* Thiết bị tablet */
     
     @media screen and (min-width: 577px) and (max-width: 1119px) {
+        .weMenberInfo .bodyUser .boxInfoMember .uploadAvatar {
+            flex-direction: column;
+        }
+        body .weMenberInfo .bodyUser .boxInfoMember .uploadAvatar .boxUpload {
+            width: 100%;
+        }
+        body .weMenberInfo .weUser .wrp .bodyUser .boxInfoMember {
+            padding: 20px;
+        }
+        .weMenberInfo .bodyUser .boxInfoMember .groupInfo .item {
+            align-items: center;
+        }
+        .weMenberInfo .bodyUser .boxInfoMember .groupInfo .item .weInfo .nameValue {
+            overflow-wrap: break-word;
+            overflow: hidden;
+            width: 200px;
+        }
+        .header.headerUser {
+            display: block;
+        }
         .wrp {
             padding: 0 32px!important;
         }
@@ -588,16 +672,16 @@
         header .weheader .wrp .box_nav .nav .nav_item:not(:last-child) {
             display: none;
         }
-        .headerHomePage .weheader .wrp .logo {
+        header .weheader .wrp .logo {
             width: 60px;
             height: 56px;
             overflow: hidden;
         }
-        .headerHomePage .weheader .wrp .logo img {
+        header .weheader .wrp .logo img {
             max-width: unset;
             height: 100%;
         }
-        .headerHomePage .weheader .wrp {
+        header .weheader .wrp {
             gap: 32px;
         }
         .categoriesHome .wrp .gr_categories .carousel-prev {
@@ -640,9 +724,6 @@
     
     @media screen and (min-width: 1120px) and (max-width: 1920px) {
         /* CSS cho thiết bị có chiều rộng từ 769px đến 1200px */
-        .headingMb {
-            display: none;
-        }
         /* .wrp {
         padding: 0 40px!important;
     } */
@@ -677,6 +758,12 @@
             display: none!important;
         }
         header .weheader .wrp .search .icon_filter {
+            display: none;
+        }
+    }
+    
+    @media screen and (min-width: 1120px) {
+        .headingMb {
             display: none;
         }
     }
