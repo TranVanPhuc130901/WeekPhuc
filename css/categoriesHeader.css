@@ -1,0 +1,213 @@
+.wx-awesome-lake:before {
+    content: "";
+}
+
+.wx-awesome-beach:before {
+    content: "";
+}
+
+.wx-awesome-beach:before {
+    content: "";
+}
+
+.wx-awesome-waterfall::before {
+    content: "";
+}
+
+.wx-awesome-farm::before {
+    content: "";
+}
+
+.wx-awesome-farm::before {
+    content: "";
+}
+
+.wx-awesome-cave::before {
+    content: "";
+}
+
+.wx-awesome-kayaking::before {
+    content: "";
+}
+
+.wx-awesome-horseback-riding::before {
+    content: "";
+}
+
+.wx-awesome-mountainous::before {
+    content: "";
+}
+
+.wx-awesome-forests:before {
+    content: "";
+}
+
+.wx-awesome-hiking::before {
+    content: "";
+}
+
+.wx-awesome-house::before {
+    content: "";
+}
+
+.wx-awesome-campervan::before {
+    content: "";
+}
+
+.wx-awesome-coastal::before {
+    content: "";
+}
+
+.wx-awesome-river::before {
+    content: "";
+}
+
+.wx-awesome-lake:before,
+.wx-awesome-beach:before,
+.wx-awesome-beach:before,
+.wx-awesome-waterfall::before,
+.wx-awesome-farm::before,
+.wx-awesome-cave::before,
+.wx-awesome-kayaking::before,
+.wx-awesome-horseback-riding::before,
+.wx-awesome-mountainous::before,
+.wx-awesome-forests:before,
+.wx-awesome-hiking::before,
+.wx-awesome-house::before,
+.wx-awesome-campervan::before,
+.wx-awesome-coastal::before,
+.wx-awesome-river::before,
+.wx-awesome-toilet:before,
+.wx-awesome-wifi:before,
+.wx-awesome-water::before,
+.wx-awesome-picnic-table::before {
+    display: inline-block;
+    font-family: weex-Awesome;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.categoriesHome .wrp {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    /* max-width: 2520px; */
+    justify-content: space-between;
+}
+
+.categoriesHome {
+    padding: 40px 0 0;
+}
+
+.categoriesHome .wrp .gr_categories {
+    width: calc(100% - 175px);
+    position: relative;
+}
+
+.categoriesHome .wrp .gr_categories a {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    white-space: nowrap;
+    align-items: center;
+    text-decoration: none;
+    color: #888;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+}
+
+.categoriesHome .wrp .gr_categories a:hover {
+    color: #141414;
+    border-bottom: 2px solid #ddd;
+}
+
+.categoriesHome .wrp .gr_categories a.active {
+    color: #141414;
+    border-bottom: 2px solid #141414;
+}
+
+.categoriesHome .wrp .gr_categories a span {
+    font-size: 24px;
+}
+
+.categoriesHome .wrp .gr_categories .menu_all {
+    width: 25px;
+    height: 24px;
+}
+
+.categoriesHome .wrp .filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #616161;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #141414;
+    cursor: pointer;
+    max-width: 130px;
+}
+
+.categoriesHome .slick-slide {
+    width: auto!important;
+    /* flex: 0 0 25%; */
+}
+
+.categoriesHome .slick-list.draggable .slick-track {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+.categoriesHome .slick-prev,
+.categoriesHome .slick-next {
+    width: 85px;
+    height: 100%;
+    z-index: 3;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0, #fff 40px);
+}
+
+.categoriesHome .wrp .gr_categories .carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.categoriesHome .wrp .gr_categories .carousel-prev {
+    background: url('../image/icon/icon_prev.svg') no-repeat left center, linear-gradient(to left, rgba(255, 255, 255, 0) 0, #fff 40px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+    z-index: 4;
+}
+
+.categoriesHome .wrp .gr_categories .carousel-next {
+    background: url('../image/icon/icon_next.svg') no-repeat right center, linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff 40px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 100%;
+    cursor: pointer;
+    z-index: 4;
+}

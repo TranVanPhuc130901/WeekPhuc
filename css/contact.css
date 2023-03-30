@@ -1,0 +1,97 @@
+.weContact {
+    padding: 40px 0;
+}
+
+.weContact .wrp {
+    max-width: 1152px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.weContact .wrp .weHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.weContact .wrp .weHeading .info {
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.weContact .wrp .weHeading h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.weContact .wrp .weHeading .weName {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.weContact .wrp .weHeading .info address {
+    font-style: normal;
+    padding-left: 30px;
+    background: url('../image/icon/icon_location2.svg') no-repeat left center;
+}
+
+.weContact .wrp .weHeading .info .hotline {
+    padding-left: 30px;
+    background: url('../image/icon/icon_call.svg') no-repeat left center;
+    color: #141414;
+    text-decoration: none;
+}
+
+.weContact .wrp .weHeading .info .email {
+    padding-left: 30px;
+    background: url('../image/icon/icon_email.svg') no-repeat left center;
+    color: #141414;
+    text-decoration: none;
+}
+
+.weContact .wrp .weHeading .info .website {
+    padding-left: 30px;
+    background: url('../image/icon/icon_global.svg') no-repeat left center;
+    color: #141414;
+    text-decoration: none;
+}
+
+.weContact .wrp form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.weContact .wrp form .heading2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.weContact .wrp form input,
+.weContact .wrp form textarea {
+    padding: 16px;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    font-family: inherit;
+    outline: none;
+}
+
+.weContact .wrp form button {
+    background: linear-gradient(268.71deg, #b40182 0%, #fc3766 100%);
+    border-radius: 8px;
+    padding: 12px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}

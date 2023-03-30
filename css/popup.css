@@ -1,0 +1,195 @@
+    .layerLogin {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+        background: rgba(0, 0, 0, .65);
+        top: 0;
+        z-index: 101;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .layerLogin.active,
+    .layerRegester.active,
+    .layerForgot.active {
+        opacity: 1;
+        visibility: inherit;
+    }
+    
+    .layerRegester {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+        background: rgba(0, 0, 0, .65);
+        top: 0;
+        z-index: 101;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .layerForgot {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+        background: rgba(0, 0, 0, .65);
+        top: 0;
+        z-index: 101;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .popup .login {
+        background: #fff;
+        min-width: 30vw;
+        min-height: 30vh;
+        cursor: initial;
+        max-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 580px;
+        border-radius: 16px;
+    }
+    
+    .popup .login .head {
+        padding: 16px 0;
+        box-shadow: inset 0 -1px 0 #d6d6d6;
+        text-align: center;
+        font-size: 0;
+    }
+    
+    .popup .login .body {
+        padding: 20px 32px 40px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        gap: 24px;
+    }
+    
+    .popup .login .body form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .popup .login .body .label {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+    }
+    
+    .popup .login .body input {
+        border: 1px solid #c2c2c2;
+        border-radius: 8px;
+        padding: 13px 16px;
+        width: 100%;
+        outline: none;
+        font-family: inherit;
+    }
+    
+    .popup .login .body .link {
+        text-decoration-line: underline;
+        line-height: 20px;
+        font-weight: 500;
+        color: var(--color-default);
+        cursor: pointer;
+        background: none;
+        outline: none;
+        border: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .popup .login .body .submit {
+        background: linear-gradient(268.71deg, #b40182 0%, #fc3766 100%);
+        border-radius: 8px;
+        padding: 13px 20px;
+        display: flex;
+        justify-content: center;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+        font-family: inherit;
+    }
+    
+    .popup .login .body .line {
+        display: flex;
+        gap: 8px;
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+    }
+    
+    .popup .login .body .line hr {
+        flex: 1;
+    }
+    
+    .popup .login .body .otherLogin {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    
+    .popup .login .body .otherLogin .other {
+        width: calc(50% - 4px);
+        padding: 11px 12px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #c2c2c2;
+        border-radius: 8px;
+        font-weight: 600;
+        background: #fff;
+        font-family: inherit;
+    }
+    
+    .popup .login .body .condition {
+        color: #616161;
+    }
+    
+    .popup .login .body .condition a {
+        color: #141414;
+        text-decoration: underline;
+    }
+    
+    .popup .body .desc {
+        color: #616161;
+    }
+    
+    .wInputPassword {
+        position: relative;
+    }
+    
+    .wInputPassword .showPassword {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        width: 23px;
+        height: 23px;
+        background: url('../image/icon/icon_eye_del.svg') no-repeat center center;
+    }

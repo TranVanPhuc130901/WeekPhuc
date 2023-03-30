@@ -1,0 +1,701 @@
+.weDetail .wrp {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.weDetail .wrp .header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.weDetail .wrp .header h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.weDetail .wrp .header .review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weDetail .wrp .header .review .rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.weDetail .wrp .header .review .rating span {
+    color: #fc3766;
+    padding-left: 24px;
+    background: url('../image/icon/icon_recommend.svg') no-repeat left center;
+}
+
+.weDetail .wrp .header .review .share {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.weDetail .wrp .header .review .share button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.weDetail .wrp .pic {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: calc(25% - 6px) calc(25% - 6px) calc(25% - 6px) calc(25% - 6px);
+    position: relative;
+}
+
+.weDetail .wrp .pic a {
+    display: block;
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.weDetail .wrp .pic .WImage:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    border-radius: 16px 0 0 16px;
+}
+
+.weDetail .wrp .pic .WImage::after {
+    bottom: 0;
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+}
+
+.weDetail .wrp .pic .WImage:hover::after {
+    background-color: #000;
+    opacity: .15;
+    transition-duration: 300ms;
+    transition-property: opacity;
+    transition-timing-function: ease-out;
+}
+
+.weDetail .wrp .pic a:nth-child(n+6) {
+    display: none;
+}
+
+.weDetail .wrp .pic a:nth-child(3) {
+    border-radius: 0 16px 0 0;
+}
+
+.weDetail .wrp .pic a:nth-child(5) {
+    border-radius: 0 0 16px 0;
+}
+
+.weDetail .wrp .pic button {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    padding: 8px 40px;
+    border: 1px solid #616161;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.weDetail .wrp .weInfomation .info_top {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.weDetail .wrp .weInfomation .left {
+    flex: 3 1 0%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.weDetail .wrp .weInfomation .right {
+    flex: 1 1 0%;
+    flex-direction: column;
+    display: flex;
+    row-gap: 16px;
+}
+
+.weDetail .wrp .weInfomation .left .WImage {
+    width: 50px;
+    height: 50px;
+}
+
+.weDetail .wrp .weInfomation .left .ident .authorName {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.weDetail .wrp .weInfomation .ident .desc {
+    color: #616161;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.weDetail .wrp .weInfomation .left .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    color: #141414;
+}
+
+.weDetail .wrp .weInfomation .left .moreDescription {
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.weDetail .wrp .weInfomation .right label {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.weDetail .wrp .weInfomation .right .groups .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.weDetail .wrp .weInfomation .right .groups .item span {
+    font-size: 24px;
+}
+
+.weDetail .wrp .weInfomation {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.weDetail .wrp .weInfomation .info_mid {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites {
+    flex: 3 1 0%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weMaps {
+    flex: 2 1 0%;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    text-decoration: none;
+    color: #141414;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site:not(:last-child) {
+    border-bottom: 1px solid #c2c2c2;
+    padding-bottom: 32px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .WImage {
+    width: 272px;
+    border-radius: 16px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .WImage::before {
+    padding-bottom: 100%;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .info {
+    width: calc(100% - 292px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .info .desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .info .titleItem {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .info .titleItem h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .info .titleItem .like {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding-left: 24px;
+    background: url('../image/icon/icon_recommend_black.svg') no-repeat left center;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .info .titleItem .like span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .info .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 6px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .info .options .item_option {
+    width: calc(50% - 6px);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .site .info .options .item_option span {
+    font-size: 24px;
+}
+
+.wx-awesome-toilet:before {
+    content: "";
+}
+
+.wx-awesome-wifi:before {
+    content: "";
+}
+
+.wx-awesome-water:before {
+    content: "";
+}
+
+.wx-awesome-picnic-table:before {
+    content: "";
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .priceTable {
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .priceTable .price {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .priceTable .button {
+    border: 1px solid #141414;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 8px;
+}
+
+.weDetail .wrp .weInfomation .info_mid .weSites .priceTable .button:hover {
+    color: #fc3766;
+    border: 1px solid #fc3766;
+}
+
+.weMaps .WIframe {
+    width: 100%;
+    height: 100vh;
+    border-radius: 16px;
+}
+
+.weMaps .WIframe iframe {
+    width: 100%;
+}
+
+.wePolicy {
+    border-top: 1px solid #c2c2c2;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.weDetail .wrp .weInfomation .info_bot {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.weDetail .wrp .weInfomation .info_bot .WIframe {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.weDetail .wrp .weInfomation .info_bot .WIframe::before {
+    padding-bottom: 30%;
+}
+
+.weDetail .wrp .weInfomation .info_bot .botHeading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.weDetail .wrp .weInfomation .info_bot .location {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.wePolicy .title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    color: #141414;
+}
+
+.wePolicy .policyContent {
+    line-height: 1.5;
+    color: #141414;
+}
+
+.weMoreInfoPrice {
+    flex-direction: row!important;
+}
+
+.weMoreInfoPrice .wePrLeft {
+    width: calc(100% - 448px);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.weMoreInfoPrice .wePrRight {
+    width: 408px;
+}
+
+.weMoreInfoPrice .wePrLeft .weUser {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.weMoreInfoPrice .wePrLeft .siteOption {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.weMoreInfoPrice .wePrLeft .siteOption .options {
+    width: calc((100% - 48px)/3);
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.weMoreInfoPrice .wePrLeft .siteOption .options label {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.weMoreInfoPrice .wePrLeft .siteOption .options .groups {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.weMoreInfoPrice .wePrLeft .siteOption .options .groups .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.weMoreInfoPrice .wePrLeft .siteOption .options .groups .item span {
+    font-size: 24px;
+}
+
+.weMoreInfoPrice .wePrRight .booking {
+    position: sticky;
+    top: 0;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #c2c2c2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.weMoreInfoPrice .wePrRight .booking .price span {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.weMoreInfoPrice .wePrRight .booking .weInput {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.weMoreInfoPrice .wePrRight .booking .weInput .input {
+    position: relative;
+}
+
+.weMoreInfoPrice .wePrRight .booking .weInput .input .box {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #616161;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: relative;
+}
+
+.weMoreInfoPrice .wePrRight .booking .weInput .input .box input {
+    border: none;
+    width: 100%;
+    background: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #141414;
+    padding: 0;
+    font-family: inherit;
+    outline: none;
+}
+
+.weMoreInfoPrice .wePrRight .booking .submit {
+    background: linear-gradient(268.71deg, #b40182 0%, #fc3766 100%);
+    border-radius: 8px;
+    padding: 16px 40px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.weMoreInfoPrice .wePrRight .booking .listing {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.weMoreInfoPrice .wePrRight .booking .listing .pri {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #616161;
+}
+
+.weMoreInfoPrice .wePrRight .booking .listing .pri span {
+    font-weight: 600;
+    line-height: 24px;
+    color: #141414;
+}
+
+.weMoreInfoPrice .wePrRight .booking .listing .total {
+    font-weight: 500;
+    color: #141414;
+}
+
+.weMoreInfoPrice .wePrRight .booking .listing .total span {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.weMoreInfoPrice .wePrRight .booking .panel {
+    position: absolute;
+    right: 0;
+    padding: 24px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .16);
+    top: calc(100% + 6px);
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.weMoreInfoPrice .wePrRight .booking .panel.active {
+    display: flex;
+}
+
+.weMoreInfoPrice .wePrRight .booking .panel .frame:not(:last-child) {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.weMoreInfoPrice .wePrRight .booking .panel .frame .text .txt {
+    font-weight: bold;
+}
+
+.weMoreInfoPrice .wePrRight .booking .panel .frame {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.weMoreInfoPrice .wePrRight .booking .panel .frame .inputNumber {
+    display: flex;
+    justify-content: space-between;
+    min-width: 120px;
+    align-items: center;
+}
+
+.weMoreInfoPrice .wePrRight .booking .panel .frame .inputNumber button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid #616161;
+    background: none;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-size: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    line-height: 0;
+    padding: 0;
+}
+
+.weMoreInfoPrice .wePrRight .booking .panel .frame .inputNumber input {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 50px;
+    border: none;
+    outline: none;
+}
+
+.weOtherLand {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.weOtherLand .weTitleLand {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.weOtherLand .groupLandItems {
+    display: flex;
+    row-gap: 40px;
+    column-gap: 32px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.weOtherLand .groupLandItems .itemLand {
+    width: calc((100% - 96px)/4);
+    position: relative;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.weOtherLand .groupLandItems .itemLand .WImage {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.weOtherLand .groupLandItems .itemLand .WImage::before {
+    padding-bottom: 82%;
+}
+
+.weOtherLand .groupLandItems .itemLand .infoLand {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.weOtherLand .groupLandItems .itemLand .infoLand .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #141414;
+}
+
+.weOtherLand .groupLandItems .itemLand .infoLand .review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weOtherLand .groupLandItems .itemLand .infoLand .review .like {
+    background: url(../image/icon/icon_recommend.svg) no-repeat left center;
+    padding-left: 24px;
+    color: #616161;
+}
+
+.weOtherLand .groupLandItems .itemLand .infoLand .review .price {
+    color: #616161;
+}
+
+.weDetail {
+    padding: 40px 0;
+}
+
+.moreOption {
+    color: #141414;
+    text-decoration: underline;
+    font-weight: 600;
+    display: none;
+}
+
+.moreOption.active {
+    display: block;
+}
