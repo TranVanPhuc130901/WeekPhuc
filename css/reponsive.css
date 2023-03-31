@@ -488,6 +488,11 @@
     /* Thiết bị tablet */
     
     @media screen and (min-width: 577px) and (max-width: 1119px) {
+        .backdrop .updateTextUser,
+        .backdrop .updateGenderUser,
+        .backdrop .updateDateUser {
+            width: 60%;
+        }
         .weMenberInfo .bodyUser .boxInfoMember .uploadAvatar {
             flex-direction: column;
         }
